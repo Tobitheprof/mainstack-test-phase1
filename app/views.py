@@ -8,7 +8,8 @@ def home(request):
     answer = r.json()
     # print(answer)
 
-    dates = answer['graph_data']['views'],
+    dates = answer['graph_data']['views']['2022-07-31'],
+    print(dates)
     nigeria = answer['top_locations'][0]['country'],
     germany = answer['top_locations'][1]['country'],
     ghana = answer['top_locations'][2]['country'],
