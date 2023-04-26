@@ -8,9 +8,10 @@ def home(request):
     answer = r.json()
     # print(answer)
 
-    date_1 = answer['graph_data']['views']['2022-07-31'],
-    dates_2 = answer['graph_data']['views']['2022-08-01'],
-    dates_3 = answer['graph_data']['views']['2022-08-02'],
+    date_0 = answer['graph_data']['views']['2022-07-31'],
+    dates_1 = answer['graph_data']['views']['2022-08-01'],
+    dates_2 = answer['graph_data']['views']['2022-08-02'],
+    dates_3 = answer['graph_data']['views']['2022-08-03'],
     dates_4 = answer['graph_data']['views']['2022-08-04'],
     dates_5 = answer['graph_data']['views']['2022-08-05'],
     dates_6 = answer['graph_data']['views']['2022-08-06'],
@@ -19,7 +20,9 @@ def home(request):
     dates_9 = answer['graph_data']['views']['2022-08-09'],
 
 
-    date1_fix = str(date_1)[1:-2]
+
+    date0_fix = str(date_0)[1:-2]
+    date1_fix = str(dates_1)[1:-2]
     date2_fix = str(dates_2)[1:-2]
     date3_fix = str(dates_3)[1:-2]
     date4_fix = str(dates_4)[1:-2]
@@ -142,6 +145,7 @@ def home(request):
         #end
 
         #views start
+        'date0' : date0_fix,
         'date1' : date1_fix,
         'date2' : date2_fix,
         'date3' : date3_fix,
