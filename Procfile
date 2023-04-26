@@ -1,0 +1,1 @@
+web: gunicorn 'frontend_task.wsgi'
