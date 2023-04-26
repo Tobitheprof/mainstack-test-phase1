@@ -8,8 +8,30 @@ def home(request):
     answer = r.json()
     # print(answer)
 
-    dates = answer['graph_data']['views']['2022-07-31'],
-    print(dates)
+    date_1 = answer['graph_data']['views']['2022-07-31'],
+    dates_2 = answer['graph_data']['views']['2022-08-01'],
+    dates_3 = answer['graph_data']['views']['2022-08-02'],
+    dates_4 = answer['graph_data']['views']['2022-08-04'],
+    dates_5 = answer['graph_data']['views']['2022-08-05'],
+    dates_6 = answer['graph_data']['views']['2022-08-06'],
+    dates_7 = answer['graph_data']['views']['2022-08-07'],
+    dates_8 = answer['graph_data']['views']['2022-08-08'],
+    dates_9 = answer['graph_data']['views']['2022-08-09'],
+
+
+    date1_fix = str(date_1)[1:-2]
+    date2_fix = str(dates_2)[1:-2]
+    date3_fix = str(dates_3)[1:-2]
+    date4_fix = str(dates_4)[1:-2]
+    date5_fix = str(dates_5)[1:-2]
+    date6_fix = str(dates_6)[1:-2]
+    date7_fix = str(dates_7)[1:-2]
+    date8_fix = str(dates_8)[1:-2]
+    date9_fix = str(dates_9)[1:-2]
+
+
+    print(date8_fix)
+
     nigeria = answer['top_locations'][0]['country'],
     germany = answer['top_locations'][1]['country'],
     ghana = answer['top_locations'][2]['country'],
@@ -117,7 +139,18 @@ def home(request):
         'instagram_count' : instagram_count,
         'facebook_count' : facebook_count,
         'linkedin_count' : linkedin_count,
+        #end
 
+        #views start
+        'date1' : date1_fix,
+        'date2' : date2_fix,
+        'date3' : date3_fix,
+        'date4' : date4_fix,
+        'date5' : date5_fix,
+        'date6' : date6_fix,
+        'date7' : date7_fix,
+        'date8' : date8_fix,
+        'date9' : date9_fix,
         #end
 
     }
