@@ -36,6 +36,9 @@ a:hover{
   color: var(--orange-text) !important;
   border-left:2px solid #FF5403 !important;
 }
+#sidebarCollapse{
+  background: #FF5403 !important;
+}
 
 /*--------------------------------------------------------------
 # Courses
