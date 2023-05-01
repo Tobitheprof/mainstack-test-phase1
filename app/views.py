@@ -92,7 +92,7 @@ def home(request):
     gm_fix = fixed_gm[2:-3]
     gh_fix = fixed_gh[2:-3]
     fin_fix = fixed_fin[2:-3]
-    uk_fix = fixed_uk[2:-3]
+    uk_fix = fixed_uk
 
 
     
